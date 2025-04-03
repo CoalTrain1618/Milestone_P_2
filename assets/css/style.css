@@ -64,6 +64,7 @@ nav {
     height: 4rem;
 }
 
+/* Media queries */
 @media  (max-width: 355px) {
     .card {
         background: linear-gradient(to bottom, #2190da, #dd83d6);
@@ -82,4 +83,70 @@ nav {
         padding: 8px;
         width: auto;
     }
+}
+
+@media (min-width: 469px) {
+    .card {
+        background: linear-gradient(to bottom, #2190da, #dd83d6);
+        margin: 5px;
+        border: 2px solid #c8cd33;
+        border-radius: 5px;
+        box-shadow: 0px -10px 10px 7px rgba(0, 0, 0, 0.1);
+        aspect-ratio: 1 / 1;;
+        height: 5rem;
+        margin: 5px;
+    }
+
+     .cards-grid {
+        display: grid;
+        grid-template-columns:  repeat(4, 110px);
+        justify-content: center;
+        gap: 10px;
+        padding: 8px;
+        width: auto;
+     }
+}
+
+@media (min-width: 768px) {
+    .card {
+        background: linear-gradient(to bottom, #2190da, #dd83d6);
+        margin: 5px;
+        border: 3px solid #c8cd33;
+        border-radius: 5px;
+        box-shadow: 0px -10px 10px 7px rgba(0, 0, 0, 0.1);
+        aspect-ratio: 1 / 1;;
+        height: 7rem;
+        margin: 5px;
+    }
+
+     .cards-grid {
+        display: grid;
+        grid-template-columns:  repeat(4, 146px);
+        justify-content: center;
+        gap: 10px;
+        padding: 8px;
+        width: auto;
+     }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        background: linear-gradient(to bottom, #2190da, #dd83d6);
+        margin: 5px;
+        border: 4px solid #c8cd33;
+        border-radius: 5px;
+        box-shadow: 0px -10px 10px 7px rgba(0, 0, 0, 0.1);
+        aspect-ratio: 1 / 1;;
+        height: 9rem;
+        margin: 5px;
+    }
+
+     .cards-grid {
+        display: grid;
+        grid-template-columns:  repeat(4, 178px);
+        justify-content: center;
+        gap: 10px;
+        padding: 8px;
+        width: auto;
+     }
 }
