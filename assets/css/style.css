@@ -25,3 +25,18 @@ nav {
     display: flex;
     justify-content: center;
 }
+
+/* Font ID */
+#game-font {
+    font-family: "Honk", system-ui, sans-serif;
+}
+
+.info {
+    font-size: 26px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 3rem 0;
+    max-width: 598px; 
+    align-self: center;
+}
