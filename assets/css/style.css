@@ -73,6 +73,10 @@ nav {
     transform-style: preserve-3d; /* ensures child emelemtns are 3d */
 }
 
+.card.flip .card-inner { /* Flip class gets added to divs via JS event listener */
+    transform: rotateY(180deg); /* flips crad 180deg Y axis */
+}
+
 .card-front, .card-back {
     position: absolute;
     top: 0;
