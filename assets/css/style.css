@@ -46,6 +46,14 @@ nav {
     align-self: center;
 }
 
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+    justify-content: center;
+    padding: 8px;
+    width: auto;
+}
+
 .card {
     background: linear-gradient(to bottom, #2190da, #dd83d6);
     margin: 5px;
