@@ -14,4 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
             flippedCards.push(clickedCard);
         });
     });
+
+    // Function to check for matched cards.
+    function checkForMatch() {
+        const [card1, card2] = flippedCards
+        const meme1 = card1.getAttribute('data-meme')
+        const meme2 = card2.getAttribute('data-meme')
+    }
 });
