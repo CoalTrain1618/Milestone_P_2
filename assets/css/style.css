@@ -10,6 +10,9 @@ html, body {
 main {
     padding: 20px;
     min-height: 100%;
+    background:radial-gradient(circle, rgb(201 123 217 / 30%) 13%, rgb(0 0 0 / 0%) 0%), 
+               linear-gradient(to bottom, #2190da, #dd83d6);
+    background-size: 1px 20px, cover;
     display: flex;
     flex-direction: column;
     justify-content: start;
