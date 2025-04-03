@@ -73,11 +73,31 @@ nav {
     transform-style: preserve-3d; /* ensures child emelemtns are 3d */
 }
 
+.card-front, .card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hides the content of hidden opposite face when flipped */
+}
+
 .img-size {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 2px;
+}
+
+.card-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.card-back {
+    transform: rotateY(180deg);
 }
 
 /* Media queries */
