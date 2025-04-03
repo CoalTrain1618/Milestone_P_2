@@ -104,6 +104,31 @@ nav {
     transform: rotateY(180deg);
 }
 
+.reset-btn {
+    background-color: #2190da;
+    font-family: "Honk", system-ui, sans-serif;
+    font-size: 27px;
+    color: black;
+    width: 80px;
+    border: 2px solid #c8cd33;
+    border-radius: 2px;
+    align-self: center;
+    margin-top: 1rem;
+    box-sizing: border-box;
+}
+
+.reset-btn:hover {
+    background-color: #0a5f97;
+    font-family: "Honk", system-ui, sans-serif;
+    font-size: 27px;
+    color: black;
+    width: 80px;
+    border: 2px solid #c8cd33;
+    border-radius: 2px;
+    align-self: center;
+    margin-top: 1rem;
+}
+
 /* Media queries */
 @media  (max-width: 355px) {
     .card {
