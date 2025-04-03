@@ -3,6 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let flippedCards = [];
     let matchedPairs = 0;
 
+    // Card Shuffle Call
+    shuffleCards();
+
+    // ──────────────────────────────────────────────────────────────────────────────────────────────
+
     // Event listener for Card click/press
     cards.forEach(card => {
         card.addEventListener('click', (event) => {
@@ -18,6 +23,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // ──────────────────────────────────────────────────────────────────────────────────────────────
+        
+    //Function for card shuffle
+    function shuffleCards() {
+        const cardsContainer = document.querySelector('.cards-grid');
+        const cards = Array.from(cardsContainer.children);
+        cards.sort(() => Math.random() - 0.5)
+        cards.forEach(card => cardsContainer.appendChild(card));
+    }
+        
+    // ──────────────────────────────────────────────────────────────────────────────────────────────
 
     // Function to check for matched cards.
     function checkForMatch() {
