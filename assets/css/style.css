@@ -62,6 +62,15 @@ nav {
     box-shadow: 0px -10px 10px 7px rgba(0, 0, 0, 0.1);
     aspect-ratio: 1 / 1;; /* Keeps cards square */
     height: 4rem;
+    perspective: 1000px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s; /* time for card to flip */
+    transform-style: preserve-3d; /* ensures child emelemtns are 3d */
 }
 
 /* Media queries */
