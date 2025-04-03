@@ -12,6 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             clickedCard.classList.add('flip'); // Adds class to activated card
             flippedCards.push(clickedCard);
+
+            if (flippedCards.length === 2) {
+                checkForMatch();
+            }
         });
     });
 
