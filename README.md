@@ -1,9 +1,9 @@
-![Men of Wales logo](/assets/images/MenofWalesLogo_small.webp) 
-# Men of Wales
+![Match Thy Meme]() 
+#Match Thy Meme
 
-The Men of Wales website is the central function of the Men of Wales grassroots charity. This charity aims to improve the mental health and well-being of men across South Wales by facilitating group walks for new and current service users. The website features current group walks for visitors to view and book, and also offers direction to other services that can help with mental health.
 
-![Multi device image](./assets/images/website-features/techsini-image.png)
+
+![Multi device image]()
 ---
 
 ## Content
@@ -16,7 +16,6 @@ The Men of Wales website is the central function of the Men of Wales grassroots 
   * [Wave Tests](#waveTest)
   * [W3C Tests](#w3cTest)
   * [Lighthouse Tests](#LightHTest)
-  * [Form Validation](#frmVal)
   * [Browser Tests](#brwsTest)
   * [Functional Testing](#FncTest)
 * [Deployment Control](#depCtr)
@@ -29,102 +28,58 @@ The Men of Wales website is the central function of the Men of Wales grassroots 
 
 ### Home Page
 
-#### Navbar 
-![navbar-colapsed](/assets/images/website-features/nav-bar-feature-collapsed.png)
-![navbar-expanded](/assets/images/website-features/nav-bar-feature.png)
+#### Banner
+![Banner]()
 
 - Contains navigation links to different pages on the site, allowing the visitor to navigate efficiently
 
 - Enhances the user experience, ensuring quick navigation and improving engagement.
 
-#### Footer
+#### Game Info
 
-![footer](/assets/images/website-features/footer.png)
+![Game info]()
 
 - Provides users with quick access to social media platforms and displays copyright information clearly.
 
 - Enhances user engagement by encouraging social media interaction as well as displaying important copyright information.
 
-#### Walking image carousel 
+#### Countdown timer
 
-![walking-carousel](./assets/images/website-features/walk-picture-carousel.png)
-
-- Displays past walks using an image carousel, along with the title "Why Walk?" with informative facts and a link to the walks page for further browsing.
-
-- Captures user interest by displaying past walks, educates visitors on the benefits of walking, and encourages further interest in the walks page.
-
-#### Need Help Support card
-
-![support section](./assets/images/website-features/supportcard.png)
+![Countdown]()
 
 - Provides users with an accessible and clear option to seek additional support services, featuring supportive and comforting text.
 
 - Allows users to quickly identify the further support page in case they need fast access to helplines.
 
-#### Walkers words text carousel
+#### Card Grid
 
-![walk review carousel](./assets/images/website-features/walk-review-carousel.png)
+![Card grid]()
 
 - Showcases an auto-play text carousel featuring walkers' reviews with the title "Walkers' Words" and text in speech marks of walkers' stories.
 
 - Provides reviews from past walkers, encouraging new visitors to join walks and building a sense of community and familiarity.
 
-#### About us shortcut card
+#### Rest Button
 
-![About us section](./assets/images/website-features/aboutUsSection.png)
+![]()
 
 - Urges visitors to explore the website further by visiting the About Us page to read about the organisation.
 
 - Promotes engagement by encouraging visitors to find out more about the charity, furthering visitor familiarity with the organisation and its mission.
 
-### Walk Page
-
-#### Walk Cards
+#### Volume Control
  
-![Walk Cards](./assets/images/website-features/walkCard.png)
+![Volume Control](Volume Control)
 
 - Enables visitors to browse available walks and view essential walk information and a visualisation of the walk.
 
 - Gives visitors a convenient and informative overview of upcoming walks while promoting visitors' familiarity with each walk.
 
-
-The 'Big Stuff' card is for big organised walks.
-
 ![Big Stuff card](./assets/images/website-features/bigStuffCard.png)
 
 ### About Us page
 
-![About Us](./assets/images/website-features/aboutPage.png)
-
-- Provides visitors with a comprehensive overview to help them understand who we are, our mission, and what we aim to achieve.
-
-- Educates visitors about the organisation's background and goals, promoting visitor engagement with joining our walks.
-
-### Need help page
-
-![Support guidance](./assets/images/website-features/supportGuidance.png)
-
-- Provides visitors seeking extra support with a page featuring cards that highlight organisations for crisis helplines and general support, offering diverse options to cater to various needs.
-
-- Ensures visitors can quickly and easily find relevant support services and crisis helplines, giving visitors easy-to-access support.
-
-### Sign Up page
-
-![Sign Up page](./assets/images/website-features/sign-upPage.png)
-
-- Provides a straightforward form where visitors can register to join one of the Men of Wales walks.
-
-- Facilitates easy registration, encouraging participation by simplifying the sign-up process and ensuring a hassle-free sign up.
-
-![Successfully submitted](./assets/images/website-features/successPage.png)
-
-### 404 error page
-
-![404 Error](./assets/images/website-features/404Page.png)
-
-- Ensures design continuity across the website by incorporating a custom page.
-
-- Maintains a cohesive and unified look throughout the site, enhancing user experience.
+![Modal](Modal)
 
 ---
 
@@ -134,11 +89,12 @@ The 'Big Stuff' card is for big organised walks.
 
 |     UserStory         |          Testing             |
 | ----------------------|------------------------------|
-| As a visitor who is interested in joining a group walk, I would like to see what walking groups are available to join and where.  | Created cards for visitors to get information on each walk. Features include image of walk, location with map pin and walk times.   |
-| As a visitor who isn't sure about walking in groups, I would like to see group sizes and to feel familiar with what to expect.    | Added a feature to display average group size for visitor familiarity.| 
-| As a previous attendee to a walk, I want to quickly access the sign-up form for the other walks.                                 | Added sign-up form to navigation bar for quick access. |
-| As a visitor who is also looking for support with my mental health, I would like to see resources for mental health services. | Created a page containing general information on mental health along with links to other services for crisis and mental health support. |
-| As a visitor, I would like to see more about Men of Wales and the work they do. | Created an about page for further information on Men of Wales. This page includes goals and story, along with stats. |
+| As a player, I want to seamlessly initiate the game when clicking on a card to allow for accurate timing, so that the timer starts counting down as soon as I click a card. |   |
+| As a player, I want my click/press to smoothly flip a card, so that I can reveal its contents and determine if it forms a matching pair easily and have 3d flipping effects for depth and immersion |   | 
+| As a player, I want a visible countdown timer, so that I feel the pressure and excitement of completing the game within a set time. I would also like to see the time it took me to finish. |  |
+| As a player, I want a clearly marked “Reset” button on the screen, so that when I complete a game or if I get stuck, I can easily restart the game and play. |  |
+| As a player, I want responsive music along with volume controls, so that I can tailor the audio effects or pause the sound to suit my environment and needs. |  |
+| As a winner I would like to see a victory screen to alert me when I have conquered the game. |  |
 
 ---
 
