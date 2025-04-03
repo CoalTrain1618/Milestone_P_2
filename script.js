@@ -17,8 +17,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to check for matched cards.
     function checkForMatch() {
-        const [card1, card2] = flippedCards
-        const meme1 = card1.getAttribute('data-meme')
-        const meme2 = card2.getAttribute('data-meme')
+        const [card1, card2] = flippedCards;
+        const meme1 = card1.getAttribute('data-meme');
+        const meme2 = card2.getAttribute('data-meme');
+
+        if (meme1 === meme2) {
+            matchedPairs++;
+            flippedCards = [];
+        } else {
+            setTimeout(() => {
+                card1.classList.remove('flip');
+                card2.classList.remove('flip');
+                flippedCards = [];
+            }, 1000); 
+        }
     }
 });
