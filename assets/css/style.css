@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
 
 html, body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     height: 100%; /* Using percent over vh to avoice white space across different browsers and operating systems*/
@@ -39,4 +40,18 @@ nav {
     margin: 3rem 0;
     max-width: 598px; 
     align-self: center;
+}
+
+.time-score {
+    align-self: center;
+}
+
+.card {
+    background: linear-gradient(to bottom, #2190da, #dd83d6);
+    margin: 5px;
+    border: 2px solid #c8cd33;
+    border-radius: 5px;
+    box-shadow: 0px -10px 10px 7px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 1 / 1;; /* Keeps cards square */
+    height: 4rem;
 }
