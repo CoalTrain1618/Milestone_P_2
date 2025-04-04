@@ -53,4 +53,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1000); 
         }
     }
+
+    // ──────────────────────────────────────────────────────────────────────────────────────────────
+
+
+    // Reset functionality 
+    const reset = document.getElementById("reset");
+    reset.addEventListener('click', (event) => {
+        shuffleCards();
+        flippedCards = [];
+        matchedPairs = 0;
+        cards.forEach(card => {
+            card.classList.remove('flip');
+        });
+    });    
 });
