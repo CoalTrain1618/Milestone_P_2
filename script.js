@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Card Shuffle Call
     shuffleCards();
 
+    let timeLeft = 30;
+    
+
     // ──────────────────────────────────────────────────────────────────────────────────────────────
 
     // Event listener for Card click/press
