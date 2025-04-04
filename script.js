@@ -42,7 +42,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function startGameTimer() {
         timerCount = setInterval(() => {
             timer.textContent = timeLeft < 10 ? `Time Left: 00:0${timeLeft}` : `Time Left: 00:${timeLeft}`;
-        })
+
+            if (timeLeft <= 0) {
+                clearInterval(timerCount);
+                return;
+            }
+
+            timeLeft--;
+        }, 1000);
     }
 
     // ──────────────────────────────────────────────────────────────────────────────────────────────
