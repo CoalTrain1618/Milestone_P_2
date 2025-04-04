@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     shuffleCards();
 
     let timeLeft = 30;
-    
+    const timer = document.getElementById("timer");
 
     // ──────────────────────────────────────────────────────────────────────────────────────────────
 
@@ -37,6 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
         cards.forEach(card => cardsContainer.appendChild(card));
     }
         
+    // ──────────────────────────────────────────────────────────────────────────────────────────────
+
+    function startGameTimer() {
+        timerCount = setInterval(() => {
+            timer.textContent = timeLeft < 10 ? `Time Left: 00:0${timeLeft}` : `Time Left: 00:${timeLeft}`;
+        })
+    }
+
     // ──────────────────────────────────────────────────────────────────────────────────────────────
 
     // Function to check for matched cards.
