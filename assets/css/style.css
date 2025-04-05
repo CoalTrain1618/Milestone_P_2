@@ -32,6 +32,15 @@ nav {
     font-family: "Honk", system-ui, sans-serif;
 }
 
+.slider-style {
+    width: 150px;
+    height: 10px;
+    appearance: none;
+    border-radius: 5px;
+    background: #dd83d6;
+    border: 2px solid #c8cd33;
+}
+
 .btn-primary {
     background-color: #dd83d6;
     font-family: "Honk", system-ui, sans-serif;
