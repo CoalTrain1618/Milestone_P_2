@@ -20,10 +20,21 @@ document.addEventListener('DOMContentLoaded', () => {
         "assets/music/winning.mp3" // Winning state
     ];
 
+    const audioPlayer = new audio();
+
+    const playPauseButton = document.getElementById("play-pause");
+    const volumeControl = document.getElementById("volume-slide");
     // ──────────────────────────────────────────────────────────────────────────────────────────────
     // Audio Function
 
-
+    function playTrack(trackIndex) {
+        if (trackIndex < 0 || trackIndex >= musicTracks.length) {
+            console.error("Invalid track index:", trackIndex);
+            return;
+        }
+        audioPlayer.src = musicTracks[trackIndex];
+        audioPlayer.play();
+    }
 
     // ──────────────────────────────────────────────────────────────────────────────────────────────
 
