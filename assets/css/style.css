@@ -41,6 +41,17 @@ nav {
     border: 2px solid #c8cd33;
 }
 
+.custom-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: url('../grom.png') center no-repeat;
+    background-size: cover;
+    width: 80px; 
+    height: 80px; 
+    border: none; 
+    cursor: pointer; 
+}
+
 .btn-primary {
     background-color: #dd83d6;
     font-family: "Honk", system-ui, sans-serif;
