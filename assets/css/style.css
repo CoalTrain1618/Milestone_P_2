@@ -32,6 +32,19 @@ nav {
     font-family: "Honk", system-ui, sans-serif;
 }
 
+.btn-primary {
+    background-color: #dd83d6;
+    font-family: "Honk", system-ui, sans-serif;
+    font-size: 25px;
+    color: black;
+    width: 80px;
+    border: 2px solid #c8cd33;
+    border-radius: 2px;
+    align-self: center;
+    margin-top: 1rem;
+    padding: 5px;
+}
+
 .info {
     font-size: 26px;
     border-radius: 5px;
