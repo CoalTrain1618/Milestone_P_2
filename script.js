@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let timeLeft = 30;
     const timer = document.getElementById("timer");
+    let timerCount = null;
+    let timerStarted = false;
 
     // ──────────────────────────────────────────────────────────────────────────────────────────────
 
@@ -20,6 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             clickedCard.classList.add('flip'); // Adds class to activated card
             flippedCards.push(clickedCard);
+
+            if (!timerStarted) {
+                startGameTimer();
+                timerStarted = true;
+            }
 
             if (flippedCards.length === 2) {
                 checkForMatch();
@@ -63,6 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (meme1 === meme2) {
             matchedPairs++;
             flippedCards = [];
+            if (matchedPairs === 6) {
+                clearInterval(timerCount);
+            }
         } else {
             setTimeout(() => {
                 card1.classList.remove('flip');
@@ -81,6 +91,11 @@ document.addEventListener('DOMContentLoaded', () => {
         shuffleCards();
         flippedCards = [];
         matchedPairs = 0;
+        timer.textContent = "00:30";
+        timeLeft = 30;
+        timerStarted = false;
+        clearInterval(timerCount);
+        timerCount = null;
         cards.forEach(card => {
             card.classList.remove('flip');
         });
