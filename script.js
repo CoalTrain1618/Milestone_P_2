@@ -12,6 +12,20 @@ document.addEventListener('DOMContentLoaded', () => {
     let timerStarted = false;
 
     // ──────────────────────────────────────────────────────────────────────────────────────────────
+    // Audio
+    // Tracks array
+    const musicTracks = [
+        "assets/music/bgMusic.mp3", // Idle state
+        "assets/music/gameOn.mp3", // Playing state
+        "assets/music/winning.mp3" // Winning state
+    ];
+
+    // ──────────────────────────────────────────────────────────────────────────────────────────────
+    // Audio Function
+
+
+
+    // ──────────────────────────────────────────────────────────────────────────────────────────────
 
     // Event listener for Card click/press
     cards.forEach(card => {
