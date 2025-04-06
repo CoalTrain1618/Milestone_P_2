@@ -20,7 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
         "assets/music/winning.mp3" // Winning state
     ];
 
-    const audioPlayer = new audio();
+    const audioPlayer = new Audio();
+    audioPlayer.volume = 0.3;
+    audioPlayer.loop = true;
 
     const playPauseButton = document.getElementById("play-pause");
     const volumeControl = document.getElementById("volume-slide");
@@ -34,6 +36,38 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         audioPlayer.src = musicTracks[trackIndex];
         audioPlayer.play();
+    }
+
+    // Event listener for play/pause button
+    playPauseButton.addEventListener("click", () => {
+        if (!audioPlayer.src) {
+            playTrack(0);
+            playPauseButton.textContent = "Pause";
+            return;
+        }
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+            playPauseButton.textContent = "Pause";
+        } else {
+            audioPlayer.pause();
+            playPauseButton.textContent = "Play";
+        }
+    });
+
+    // Event listener for volume control
+    volumeControl.addEventListener("input", () => {
+        audioPlayer.volume = volumeControl.value;
+    });
+
+
+    // Function to update the audio track based on the game state
+    function updateAudioTrack(trackIndex) {
+        if (!audioPlayer.paused) {
+            playTrack(trackIndex);
+        } else {
+            audioPlayer.src = musicTracks[trackIndex];
+            audioPlayer.load();
+        }
     }
 
     // ──────────────────────────────────────────────────────────────────────────────────────────────

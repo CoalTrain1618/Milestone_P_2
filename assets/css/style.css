@@ -32,6 +32,11 @@ nav {
     font-family: "Honk", system-ui, sans-serif;
 }
 
+
+.audio-controls {
+    display: inline-block;
+}
+
 .slider-style {
     width: 150px;
     height: 10px;
