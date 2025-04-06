@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
         
     // ──────────────────────────────────────────────────────────────────────────────────────────────
-
+    // Function to start countdown
     function startGameTimer() {
         timerCount = setInterval(() => {
             timer.textContent = timeLeft < 10 ? `Time Left: 00:0${timeLeft}` : `Time Left: 00:${timeLeft}`;
@@ -98,6 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (timeLeft <= 0) {
                 clearInterval(timerCount);
                 updateAudioTrack(0);
+                gameActive = false;
                 return;
             }
 
@@ -109,6 +110,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Event listener for Card click/press
     cards.forEach(card => {
         card.addEventListener('click', (event) => {
+            if (!gameActive) return;
+
             const clickedCard = event.currentTarget;
 
             if (flippedCards.length >= 2 || clickedCard.classList.contains('flip')) return;
@@ -121,7 +124,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 timerStarted = true;
             }
 
-
+            if (!isGamePlaying) {
+                updateAudioTrack(1);
+                isGamePlaying = true;
+            }
 
             if (flippedCards.length === 2) {
                 checkForMatch();
@@ -161,11 +167,14 @@ document.addEventListener('DOMContentLoaded', () => {
         shuffleCards();
         flippedCards = [];
         matchedPairs = 0;
-        timer.textContent = "00:30";
+        timer.textContent = "Time Left: 00:30";
         timeLeft = 30;
         timerStarted = false;
         clearInterval(timerCount);
         timerCount = null;
+        isGamePlaying = false;
+        updateAudioTrack(0);
+        gameActive = true;
         cards.forEach(card => {
             card.classList.remove('flip');
         });
