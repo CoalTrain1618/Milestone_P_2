@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll(".card");
     let flippedCards = [];
     let matchedPairs = 0;
-
+    // ──────────────────────────────────────────────────────────────────────────────────────────────
     // Card Shuffle Call
     shuffleCards();
 
@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const timer = document.getElementById("timer");
     let timerCount = null;
     let timerStarted = false;
+
 
     // ──────────────────────────────────────────────────────────────────────────────────────────────
     // Audio
@@ -26,6 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const playPauseButton = document.getElementById("play-pause");
     const volumeControl = document.getElementById("volume-slide");
+    // ──────────────────────────────────────────────────────────────────────────────────────────────
+    //Game Status flags
+    let isGamePlaying = false; // flag ensures music doesn't restart on each card flip
+    let gameActive = true; // flag for game state to enable / disable card flipping 
     // ──────────────────────────────────────────────────────────────────────────────────────────────
     // Audio Function
 
@@ -72,26 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ──────────────────────────────────────────────────────────────────────────────────────────────
 
-    // Event listener for Card click/press
-    cards.forEach(card => {
-        card.addEventListener('click', (event) => {
-            const clickedCard = event.currentTarget;
-
-            if (flippedCards.length >= 2 || clickedCard.classList.contains('flip')) return;
-
-            clickedCard.classList.add('flip'); // Adds class to activated card
-            flippedCards.push(clickedCard);
-
-            if (!timerStarted) {
-                startGameTimer();
-                timerStarted = true;
-            }
-
-            if (flippedCards.length === 2) {
-                checkForMatch();
-            }
-        });
-    });
+    
 
     // ──────────────────────────────────────────────────────────────────────────────────────────────
         
@@ -111,12 +97,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (timeLeft <= 0) {
                 clearInterval(timerCount);
+                updateAudioTrack(0);
                 return;
             }
 
             timeLeft--;
         }, 1000);
     }
+
+    // ──────────────────────────────────────────────────────────────────────────────────────────────
+    // Event listener for Card click/press
+    cards.forEach(card => {
+        card.addEventListener('click', (event) => {
+            const clickedCard = event.currentTarget;
+
+            if (flippedCards.length >= 2 || clickedCard.classList.contains('flip')) return;
+
+            clickedCard.classList.add('flip'); // Adds class to activated card
+            flippedCards.push(clickedCard);
+
+            if (!timerStarted) {
+                startGameTimer();
+                timerStarted = true;
+            }
+
+
+
+            if (flippedCards.length === 2) {
+                checkForMatch();
+            }
+        });
+    });
+        
 
     // ──────────────────────────────────────────────────────────────────────────────────────────────
 
@@ -142,7 +154,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ──────────────────────────────────────────────────────────────────────────────────────────────
-
 
     // Reset functionality 
     const reset = document.getElementById("reset");
