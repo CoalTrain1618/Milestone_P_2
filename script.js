@@ -11,7 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
     let timerCount = null;
     let timerStarted = false;
 
-
+    // Player Time
+    let pTime = document.getElementById("playerTime");
+    // ──────────────────────────────────────────────────────────────────────────────────────────────
+    //modal variables for function
+    let modal = document.getElementById("endModal");
+    let modalClose = document.querySelector(".modalClose");
     // ──────────────────────────────────────────────────────────────────────────────────────────────
     // Audio
     // Tracks array
@@ -149,6 +154,9 @@ document.addEventListener('DOMContentLoaded', () => {
             flippedCards = [];
             if (matchedPairs === 6) {
                 clearInterval(timerCount);
+                modal.style.display = "block";
+                pTime.textContent = `You did it in: 00:${29 - timeLeft}s`;
+                updateAudioTrack(2);
             }
         } else {
             setTimeout(() => {
@@ -158,6 +166,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1000); 
         }
     }
+
+    // ──────────────────────────────────────────────────────────────────────────────────────────────
+
+    // Event listener for closing the modal
+    modalClose.addEventListener('click', () => {
+        modal.style.display = "none";
+        updateAudioTrack(0);
+    });
 
     // ──────────────────────────────────────────────────────────────────────────────────────────────
 
