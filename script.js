@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Card Shuffle Call
     shuffleCards();
 
-    let timeLeft = 30;
+    let timeLeft = 30; // timer is set to 30 seconds
     const timer = document.getElementById("timer");
     let timerCount = null;
-    let timerStarted = false;
+    let timerStarted = false; 
 
     // Player Time
     let pTime = document.getElementById("playerTime");
@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const audioPlayer = new Audio();
-    audioPlayer.volume = 0.3;
-    audioPlayer.loop = true;
+    audioPlayer.volume = 0.3; // msuic's natural volume level
+    audioPlayer.loop = true; 
 
     const playPauseButton = document.getElementById("play-pause");
     const volumeControl = document.getElementById("volume-slide");
@@ -40,41 +40,43 @@ document.addEventListener('DOMContentLoaded', () => {
     // Audio Function
 
     function playTrack(trackIndex) {
-        if (trackIndex < 0 || trackIndex >= musicTracks.length) {
-            console.error("Invalid track index:", trackIndex);
+        if (trackIndex < 0 || trackIndex >= musicTracks.length) { // checks for call error
+            console.error("Invalid track index:", trackIndex); 
             return;
         }
-        audioPlayer.src = musicTracks[trackIndex];
-        audioPlayer.play();
+        audioPlayer.src = musicTracks[trackIndex]; //loads track to .src
+        audioPlayer.play(); //plays loaded track
     }
 
     // Event listener for play/pause button
     playPauseButton.addEventListener("click", () => {
-        if (!audioPlayer.src) {
-            playTrack(0);
-            playPauseButton.textContent = "Pause";
+        if (!audioPlayer.src) { //if src is empty 
+            playTrack(0); 
+            playPauseButton.textContent = "Pause"; // ensures button changes to reflect state of audio
             return;
         }
-        if (audioPlayer.paused) {
+        if (audioPlayer.paused) { // checks if audio is paused andplays music when clicked
             audioPlayer.play();
             playPauseButton.textContent = "Pause";
-        } else {
-            audioPlayer.pause();
-            playPauseButton.textContent = "Play";
+        } else { // else (i.e .play) then pause if clicked
+            audioPlayer.pause(); 
+            playPauseButton.textContent = "Play"; 
         }
     });
 
     // Event listener for volume control
-    volumeControl.addEventListener("input", () => {
+    volumeControl.addEventListener("input", () => { // handles user volume input
         audioPlayer.volume = volumeControl.value;
     });
 
 
     // Function to update the audio track based on the game state
-    function updateAudioTrack(trackIndex) {
-        if (!audioPlayer.paused) {
+    function updateAudioTrack(trackIndex) { 
+        if (!audioPlayer.paused) { // checks if audio button not paused, then play music
             playTrack(trackIndex);
-        } else {
+        } else { 
+            /* if music is paused, track will still load without playing. Ensures correct msuic track is ready to play if 
+            user chooses to play audio partly through game. */
             audioPlayer.src = musicTracks[trackIndex];
             audioPlayer.load();
         }
