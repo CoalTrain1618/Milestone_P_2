@@ -110,27 +110,27 @@ document.addEventListener('DOMContentLoaded', () => {
     // ──────────────────────────────────────────────────────────────────────────────────────────────
     // Event listener for Card click/press
     cards.forEach(card => {
-        card.addEventListener('click', (event) => {
-            if (!gameActive) return;
+        card.addEventListener('click', (event) => { // Upon click trigger following events
+            if (!gameActive) return; // triggers game activity 
 
-            const clickedCard = event.currentTarget;
+            const clickedCard = event.currentTarget; // applies listed events to current card
 
             if (flippedCards.length >= 2 || clickedCard.classList.contains('flip')) return;
 
             clickedCard.classList.add('flip'); // Adds class to activated card
             flippedCards.push(clickedCard);
 
-            if (!timerStarted) {
+            if (!timerStarted) { // calls the game timer function if not already called.
                 startGameTimer();
-                timerStarted = true;
+                timerStarted = true; // When true, prevents timer from restarting on every card flip
             }
 
-            if (!isGamePlaying) {
-                updateAudioTrack(1);
-                isGamePlaying = true;
+            if (!isGamePlaying) { // cehcks if game is not playing || isGamePlaying = false
+                updateAudioTrack(1); // initiates gaming music if is Game is initiated
+                isGamePlaying = true; 
             }
-            
-            if (flippedCards.length === 2) {
+
+            if (flippedCards.length === 2) { // calls checks for match 
                 checkForMatch();
             }
         });
