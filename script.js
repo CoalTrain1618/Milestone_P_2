@@ -81,10 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ──────────────────────────────────────────────────────────────────────────────────────────────
-
-    
-
-    // ──────────────────────────────────────────────────────────────────────────────────────────────
         
     //Function for card shuffle
     function shuffleCards() {
@@ -133,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 updateAudioTrack(1);
                 isGamePlaying = true;
             }
-
+            
             if (flippedCards.length === 2) {
                 checkForMatch();
             }
@@ -146,24 +142,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to check for matched cards.
     function checkForMatch() {
         const [card1, card2] = flippedCards;
-        const meme1 = card1.getAttribute('data-meme');
+        const meme1 = card1.getAttribute('data-meme'); // assigns data value to meme1&2 data value ex (html LINE:145 - data-meme="meme5")
         const meme2 = card2.getAttribute('data-meme');
 
-        if (meme1 === meme2) {
-            matchedPairs++;
-            flippedCards = [];
-            if (matchedPairs === 6) {
-                clearInterval(timerCount);
-                modal.style.display = "block";
-                pTime.textContent = `You did it in: 00:${29 - timeLeft}s`;
+        if (meme1 === meme2) { // conditional equality check
+            matchedPairs++; // if memes match +1 to matchedPairs
+            flippedCards = []; // clear array
+            if (matchedPairs === 6) {  // winning conditionalstatement
+                clearInterval(timerCount); // stops setInterval timer from counting 
+                modal.style.display = "block"; // displays modal from hidden
+                pTime.textContent = `You did it in: 00:${29 - timeLeft}s`; // player completion time display 
                 updateAudioTrack(2);
             }
         } else {
-            setTimeout(() => {
-                card1.classList.remove('flip');
+            setTimeout(() => { // if cards dont match
+                card1.classList.remove('flip'); // remove class
                 card2.classList.remove('flip');
                 flippedCards = [];
-            }, 1000); 
+            }, 1000); // 1000 milisecond delay
         }
     }
 
@@ -171,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Event listener for closing the modal
     modalClose.addEventListener('click', () => {
-        modal.style.display = "none";
+        modal.style.display = "none"; // hides modal
         updateAudioTrack(0);
     });
 
@@ -180,19 +176,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Reset functionality 
     const reset = document.getElementById("reset");
     reset.addEventListener('click', (event) => {
-        shuffleCards();
-        flippedCards = [];
-        matchedPairs = 0;
-        timer.textContent = "Time Left: 00:30";
-        timeLeft = 30;
-        timerStarted = false;
-        clearInterval(timerCount);
-        timerCount = null;
-        isGamePlaying = false;
+        shuffleCards(); // re-shuffles cards
+        flippedCards = []; // resets back to empty
+        matchedPairs = 0; 
+        timer.textContent = "Time Left: 00:30"; // set back to original text
+        timeLeft = 30; 
+        timerStarted = false; // re-instates flag
+        clearInterval(timerCount); // clears setIntervalTimer
+        timerCount = null;  
+        isGamePlaying = false; // re-instates flag
         updateAudioTrack(0);
-        gameActive = true;
+        gameActive = true; // re-instates flag
         cards.forEach(card => {
-            card.classList.remove('flip');
+            card.classList.remove('flip'); // Removes flip from cards.
         });
     });    
 });
