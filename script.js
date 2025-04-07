@@ -84,27 +84,28 @@ document.addEventListener('DOMContentLoaded', () => {
         
     //Function for card shuffle
     function shuffleCards() {
-        const cardsContainer = document.querySelector('.cards-grid');
-        const cards = Array.from(cardsContainer.children);
-        cards.sort(() => Math.random() - 0.5)
-        cards.forEach(card => cardsContainer.appendChild(card));
+        const cardsContainer = document.querySelector('.cards-grid'); // selects parent of cards
+        const cards = Array.from(cardsContainer.children); // targets children of cards-grid
+        cards.sort(() => Math.random() - 0.5) // randomly generates card order between -0.5 & 0.5 
+        cards.forEach(card => cardsContainer.appendChild(card)); // re-attaches the shuffled cards to grid
     }
         
     // ──────────────────────────────────────────────────────────────────────────────────────────────
     // Function to start countdown
-    function startGameTimer() {
-        timerCount = setInterval(() => {
+    function startGameTimer() { 
+        timerCount = setInterval(() => { 
+            // conditional for timer display, if less than 10s first display, else seceond display
             timer.textContent = timeLeft < 10 ? `Time Left: 00:0${timeLeft}` : `Time Left: 00:${timeLeft}`;
 
             if (timeLeft <= 0) {
-                clearInterval(timerCount);
+                clearInterval(timerCount); // stops countdown at zero
                 updateAudioTrack(0);
-                gameActive = false;
+                gameActive = false; // freezes gaem if time runs out
                 return;
             }
 
-            timeLeft--;
-        }, 1000);
+            timeLeft--; // takes away 1
+        }, 1000); // loops for every 1000 miliseconds/ 1 second
     }
 
     // ──────────────────────────────────────────────────────────────────────────────────────────────
