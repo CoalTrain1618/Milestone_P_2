@@ -29,55 +29,53 @@
 ### Home Page
 
 #### Banner
-![Banner]()
+![Banner](assets\AppImgFeatures\Banner.png)
 
-- Contains navigation links to different pages on the site, allowing the visitor to navigate efficiently
+- Page header that prominently showcases the game's title.
 
-- Enhances the user experience, ensuring quick navigation and improving engagement.
-
-#### Game Info
-
-![Game info]()
-
-- Provides users with quick access to social media platforms and displays copyright information clearly.
-
-- Enhances user engagement by encouraging social media interaction as well as displaying important copyright information.
-
-#### Countdown timer
-
-![Countdown]()
-
-- Provides users with an accessible and clear option to seek additional support services, featuring supportive and comforting text.
-
-- Allows users to quickly identify the further support page in case they need fast access to helplines.
-
-#### Card Grid
-
-![Card grid]()
-
-- Showcases an auto-play text carousel featuring walkers' reviews with the title "Walkers' Words" and text in speech marks of walkers' stories.
-
-- Provides reviews from past walkers, encouraging new visitors to join walks and building a sense of community and familiarity.
-
-#### Rest Button
-
-![]()
-
-- Urges visitors to explore the website further by visiting the About Us page to read about the organisation.
-
-- Promotes engagement by encouraging visitors to find out more about the charity, furthering visitor familiarity with the organisation and its mission.
+- Reinforces the game's theme, making it easily recognizable to players.
 
 #### Volume Control
  
-![Volume Control](Volume Control)
+![Volume Control](assets\AppImgFeatures\audioControls.png)
 
-- Enables visitors to browse available walks and view essential walk information and a visualisation of the walk.
+- A playful audio control interface that allows users to manage playback and volume through an interactive design.
 
-- Gives visitors a convenient and informative overview of upcoming walks while promoting visitors' familiarity with each walk.
+- Empowers users with full control over game audio, enhancing the experience with customizable sound adjustments.
 
-![Big Stuff card](./assets/images/website-features/bigStuffCard.png)
+#### Game Instructions
 
-### About Us page
+![Game info](assets\AppImgFeatures\instructions.png)
+
+- Displays clear guidance on how to play the game, ensuring players understand the mechanics.
+
+- Improves user experience by reducing confusion and encouraging engagement, making gameplay smoother and more enjoyable.
+
+#### Countdown timer
+
+![Countdown](assets\AppImgFeatures\gameTimer.png)
+
+- A countdown time mechanic that visually displays the remaining seconds before the game ends.
+
+- Adds urgency and excitement, encouraging players to make quick decisions while enhancing the competitive aspect of gameplay.
+
+#### Card Grid
+
+![Card grid](assets\AppImgFeatures\cardGrid.png)
+
+- A structured arrangement of cards displayed in a grid layout, ensuring a clear and organized game interface.
+
+- Provides players with an intuitive visual format for interacting with the game, making gameplay smoother and more engaging.
+
+#### Rest Button
+
+![Reset Button](assets\AppImgFeatures\resetBtn.png)
+
+- A dedicated button that allows users to restart the game, resetting all active elements, audio and progress.
+
+- Provides a quick way to start fresh, ensuring a seamless experience when players want to retry or improve their attempt.
+
+### 
 
 ![Modal](Modal)
 

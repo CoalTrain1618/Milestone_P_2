@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
 
 html, body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /*  */
     margin: 0;
     padding: 0;
     height: 100%; /* Using percent over vh to avoice white space across different browsers and operating systems*/
@@ -28,7 +28,7 @@ nav {
 }
 
 /* Font ID */
-#game-font {
+.game-font {
     font-family: "Honk", system-ui, sans-serif;
 }
 
