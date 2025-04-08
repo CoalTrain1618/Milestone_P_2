@@ -3,7 +3,7 @@
 
 
 
-![Multi device image]()
+![Multi device image](/assets/appFeaturesImgs/MultiMediaDisplay.png)
 ---
 
 ## Content
