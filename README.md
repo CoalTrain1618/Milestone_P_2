@@ -1,5 +1,5 @@
-![Match Thy Meme]() 
-#Match Thy Meme
+![Grom](/assets/appFeaturesImgs/gromReadMe.png)
+# Match Thy Meme
 
 
 
@@ -9,6 +9,7 @@
 ## Content
 
 * [Features](#featre)
+* [Development process](#Develop)
 * [User Story Tests](#usrStry)
 * [WireFrames](#wireFrm)
 * [Technologies](#techno)
@@ -91,6 +92,22 @@
 
 - Cosutom design ensures user experiances continuity across each page.
 ---
+<a id="Develop"></a>
+
+## Development process
+
+### Overview
+ To ensure a focused approach to building my application, I initially coded the base build in a separate repository. [Original Repository](https://github.com/CoalTrain1618/testBuild). This allowed me to concentrate solely on the development environment without the added pressure of an assessment-driven workflow. By structuring my process this way, I prioritized learning and experimentation over commit tracking, ensuring I could refine my skills and fully immerse myself in the development experience.
+
+### Rationality
+  I wanted to create a pure, build-focused environment—one where I could work independently without external influences or immediate feedback. To achieve this, I deliberately kept the project offline, allowing myself to think critically about development, debugging, and feature experimentation. Minimizing outside assistance was a key factor in this decision, as it challenged me to push my skills further and gain a deeper understanding of the coding process.
+
+### Reflections
+  Developing this project in the way I did was an incredibly rewarding experience. I truly believe I wouldn’t have achieved this depth of learning through any other method. Throughout the build, I pushed through numerous barriers in my programming skills, and as a result, my confidence has grown significantly compared to when I first started.
+
+  However, there were drawbacks that I would improve upon in future projects. Specifically, I aim to better document my debugging processes, experimentation phases, and the reasoning behind restructuring my code. Despite these challenges, I did manage to record the restructuring of my biggest bug involving the audio, which provided valuable insight into my development journey. ([Audio bug report](/assets/testing/audioBugReport.md))
+
+
 
 <a id="usrStry"></a>
 
@@ -177,12 +194,12 @@ Testing was focused to ensure the following criteria were met:
 
 ## Wave Test Results
 #### Index Wave Results
-![index wave](/assets/testingImgs/waveTest.png)
+![index wave](/assets/testing/waveTest.png)
 
 - 12 Alerts are related to the '< p > ? < /p >' not being headings. As it didn't seem necessary to update them, I left them as is. 
 
 #### 404 wave result
-![404 wave](/assets/testingImgs/wave404.png)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ---
 
@@ -194,14 +211,19 @@ I used the W3C code validator to check that all HTML code is valid. I pasted eac
 
 ## Results
 #### index.html
-![index.html](./assets/images/w3c-Validation/indexHtml%20validation.png)
+![index.html](/assets/testing/404Validation.png)
 
-Satisfied with the result of no errors, I then tested the HTML and CSS with the URL testing method.
+#### 404.html
+![404.html](/assets/testing/404Validation.png)
+
+#### CSS
+![](/assets/testing/cssValidation.png)
+
+Satisfied with the result of no errors, I then tested the HTML with the URL testing method.
 
 #### URL test HTML
 
-
-#### URL test CSS
+![URL test](/assets/testing/htmlUrlTest.png)
 
 
 Both tests yielded no errors.
