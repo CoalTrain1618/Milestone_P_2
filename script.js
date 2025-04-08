@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function shuffleCards() {
         const cardsContainer = document.querySelector('.cards-grid'); // selects parent of cards
         const cards = Array.from(cardsContainer.children); // targets children of cards-grid
-        cards.sort(() => Math.random() - 0.5) // randomly generates card order between -0.5 & 0.5 
+        cards.sort(() => Math.random() - 0.5); // randomly generates card order between -0.5 & 0.5 
         cards.forEach(card => cardsContainer.appendChild(card)); // re-attaches the shuffled cards to grid
     }
         
