@@ -83,6 +83,13 @@
 
 - Enhances user experience by clearly signaling game completion and displaying their completion time.
 
+#### 404 Error page
+
+![404 error page](/assets/appFeaturesImgs/404Page.png)
+
+- Custom 404 page for: Error page not found
+
+- Cosutom design ensures user experiances continuity across each page.
 ---
 
 <a id="usrStry"></a>
@@ -175,7 +182,7 @@ Testing was focused to ensure the following criteria were met:
 - 12 Alerts are related to the '< p > ? < /p >' not being headings. As it didn't seem necessary to update them, I left them as is. 
 
 #### 404 wave result
-![404 wave]()
+![404 wave](/assets/testingImgs/wave404.png)
 
 ---
 

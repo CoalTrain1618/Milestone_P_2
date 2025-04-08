@@ -19,12 +19,20 @@ main {
     justify-content: start;
 }
 
-nav {
-    background-color: #333;
+header {
+    background-color: #2190da;
     color: white;
     padding: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
 }
 
 /* Font ID */
