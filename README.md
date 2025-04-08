@@ -29,7 +29,7 @@
 ### Home Page
 
 #### Banner
-![Banner](assets\AppImgFeatures\Banner.png)
+![Banner](/assets/appFeaturesImgs/Banner.png)
 
 - Page header that prominently showcases the game's title.
 
@@ -37,7 +37,7 @@
 
 #### Volume Control
  
-![Volume Control](assets\AppImgFeatures\audioControls.png)
+![Volume Control](/assets/appFeaturesImgs/audioControls.png)
 
 - A playful audio control interface that allows users to manage playback and volume through an interactive design.
 
@@ -45,7 +45,7 @@
 
 #### Game Instructions
 
-![Game info](assets\AppImgFeatures\instructions.png)
+![Game info](/assets/appFeaturesImgs/instructions.png)
 
 - Displays clear guidance on how to play the game, ensuring players understand the mechanics.
 
@@ -53,7 +53,7 @@
 
 #### Countdown timer
 
-![Countdown](assets\AppImgFeatures\gameTimer.png)
+![Countdown](/assets/appFeaturesImgs/gameTimer.png)
 
 - A countdown time mechanic that visually displays the remaining seconds before the game ends.
 
@@ -61,7 +61,7 @@
 
 #### Card Grid
 
-![Card grid](assets\AppImgFeatures\cardGrid.png)
+![Card grid](/assets/appFeaturesImgs/cardGrid.png)
 
 - A structured arrangement of cards displayed in a grid layout, ensuring a clear and organized game interface.
 
@@ -69,7 +69,7 @@
 
 #### Rest Button
 
-![Reset Button](assets\AppImgFeatures\resetBtn.png)
+![Reset Button](/assets/appFeaturesImgs/resetBtn.png)
 
 - A dedicated button that allows users to restart the game, resetting all active elements, audio and progress.
 
@@ -77,7 +77,7 @@
 
 #### Victory Modal
 
-![Modal](assets\AppImgFeatures\modal.png)
+![Modal](/assets/appFeaturesImgs/modal.png)
 
 - A pop-up overlay that displays a completion message when the game ends, providing feedback to the player.
 
@@ -105,7 +105,7 @@
 ### link to Wireframes Here !
 
 PDF file containing all Wireframes designs
-[Wireframes PDF](\assets\wireframes\MatchThyMeme-Wireframes.pdf)
+[Wireframes PDF](/assets/wireframes/MatchThyMeme-Wireframes.pdf)
 
 ---
 
@@ -170,13 +170,13 @@ Testing was focused to ensure the following criteria were met:
 
 ## Wave Test Results
 #### Index Wave Results
-![index wave](assets/testingImgs/waveTest.png)
+![index wave](/assets/testingImgs/waveTest.png)
 
 - 12 Alerts are related to the '< p > ? < /p >' not being headings. As it didn't seem necessary to update them, I left them as is. 
 
 #### 404 wave result
 ![404 wave]()
-!!!!!!!!!!!!!!!!! SORT !!!!!!!!!!!!!!!!!!!!!
+
 ---
 
 <a id="w3cTest"></a>
