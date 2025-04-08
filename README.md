@@ -75,9 +75,13 @@
 
 - Provides a quick way to start fresh, ensuring a seamless experience when players want to retry or improve their attempt.
 
-### 
+#### Victory Modal
 
-![Modal](Modal)
+![Modal](assets\AppImgFeatures\modal.png)
+
+- A pop-up overlay that displays a completion message when the game ends, providing feedback to the player.
+
+- Enhances user experience by clearly signaling game completion and displaying their completion time.
 
 ---
 
@@ -87,12 +91,12 @@
 
 |     UserStory         |          Testing             |
 | ----------------------|------------------------------|
-| As a player, I want to seamlessly initiate the game when clicking on a card to allow for accurate timing, so that the timer starts counting down as soon as I click a card. |   |
-| As a player, I want my click/press to smoothly flip a card, so that I can reveal its contents and determine if it forms a matching pair easily and have 3d flipping effects for depth and immersion |   | 
-| As a player, I want a visible countdown timer, so that I feel the pressure and excitement of completing the game within a set time. I would also like to see the time it took me to finish. |  |
-| As a player, I want a clearly marked “Reset” button on the screen, so that when I complete a game or if I get stuck, I can easily restart the game and play. |  |
-| As a player, I want responsive music along with volume controls, so that I can tailor the audio effects or pause the sound to suit my environment and needs. |  |
-| As a winner I would like to see a victory screen to alert me when I have conquered the game. |  |
+| As a player, I want to seamlessly initiate the game when clicking on a card to allow for accurate timing, so that the timer starts counting down as soon as I click a card. | Users can click card to begin playing and countdown timer will start on click, allowing for precise timing.  |
+| As a player, I want my click/press to smoothly flip a card, so that I can reveal its contents and determine if it forms a matching pair easily and have 3d flipping effects for depth and immersion | Added CSS 3D flipping animation for user engagement. Along with functionality to track flipped cards for matches.  | 
+| As a player, I want a visible countdown timer, so that I feel the pressure and excitement of completing the game within a set time. I would also like to see the time it took me to finish. | Added 30s countdown timer for enhanced experience along with a user completion time on the victory modal |
+| As a player, I want a clearly marked “Reset” button on the screen, so that when I complete a game or if I get stuck, I can easily restart the game and play. | Added Reset button and  functionality, which swiftly reset all aspects of the game for another attempt. |
+| As a player, I want responsive music along with volume controls, so that I can tailor the audio effects or pause the sound to suit my environment and needs. | Added different music to correspond with the game's state, along with audio controls which allows user to set as needed. |
+| As a winner I would like to see a victory screen to alert me when I have conquered the game. | Added a victory pop up modal which activates winning music and congratulations message, along with completion time |
 
 ---
 
@@ -166,11 +170,13 @@ Testing was focused to ensure the following criteria were met:
 
 ## Wave Test Results
 #### Index Wave Results
-![index wave]()
+![index wave](assets/testingImgs/waveTest.png)
+
+- 12 Alerts are related to the '< p > ? < /p >' not being headings. As it didn't seem necessary to update them, I left them as is. 
 
 #### 404 wave result
 ![404 wave]()
-
+!!!!!!!!!!!!!!!!! SORT !!!!!!!!!!!!!!!!!!!!!
 ---
 
 <a id="w3cTest"></a>
@@ -183,7 +189,7 @@ I used the W3C code validator to check that all HTML code is valid. I pasted eac
 #### index.html
 ![index.html](./assets/images/w3c-Validation/indexHtml%20validation.png)
 
-Satisfied with the result of no errors across all pages individually, I then tested the HTML and CSS with the URL testing method.
+Satisfied with the result of no errors, I then tested the HTML and CSS with the URL testing method.
 
 #### URL test HTML
 
