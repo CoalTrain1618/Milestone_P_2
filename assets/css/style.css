@@ -45,6 +45,11 @@ header img {
     display: inline-block;
 }
 
+.vol-label-style {
+    font-family: "Honk", system-ui, sans-serif;
+    font-size: 25px;
+}
+
 .slider-style {
     width: 150px;
     height: 10px;
@@ -211,6 +216,36 @@ header img {
         justify-content: center;
         padding: 8px;
         width: auto;
+    }
+
+    .slider-style {
+        width: 150px;
+        height: 10px;
+        appearance: none;
+        border-radius: 5px;
+        background: #dd83d6;
+        border: 2px solid #c8cd33;
+        margin-top: 30px;
+    }
+ 
+    .audio-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-primary {
+        background-color: #dd83d6;
+        font-family: "Honk", system-ui, sans-serif;
+        font-size: 25px;
+        color: black;
+        width: 80px;
+        border: 2px solid #c8cd33;
+        border-radius: 2px;
+        align-self: center;
+        margin: 10px 0;
+        padding: 5px;
     }
 }
 
