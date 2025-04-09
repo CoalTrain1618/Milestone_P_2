@@ -235,15 +235,21 @@ All tests yielded no errors.
 
 ## Lighthouse testing for performance scores
 
-I used Lighthouse testing for performance tests, checking that the site runs smoothly on both desktop and mobile. As expected, mobile results are slightly lower.
-
-When putting each page through testing, tests showed that the images were originally oversized, causing unnecessary load times. As a result, I resized every image on the website for better optimisation, as well as changed their format to .webp.
+ - I used Lighthouse testing for performance tests, checking that the site runs smoothly on both desktop and mobile. As expected, mobile results are slightly lower.
 
 ## Results
 
-## index.html
+## index.html - Desktop
 
-## 404 Error Page
+![Desktop result](/assets/testing/indexLighthouseRlt.png)
+
+ - Very satisfied with a perfect 100 across the board. A previous test attempt resulted in an SEO score of 90, revealing a missing meta description in the HTML display. After addressing this issue, the latest test achieved full marks.
+
+## index.html - Mobile
+
+![Mobile Result](/assets/testing/indexLighthouseMobile.png)
+
+  - I anticipated lower results for mobile testing, but I'm pleasantly surprised and very happy with the outcome.
 ---
 
 
@@ -260,7 +266,7 @@ When putting each page through testing, tests showed that the images were origin
  |   Google       |        Latest          |    No visual discrepancies    | Site remains responsive on all pages and screen sizes   |
  |   Edge         |        Latest          |    No visual discrepancies    | Site remains responsive on all pages and screen sizes   |
  |   Brave        |        Latest          |    No visual discrepancies    | Site remains responsive on all pages and screen sizes   |
- |   Safari       |        Latest          |   No visual discrepancies     | Site remains responsive on all pages and screen sizes   |
+ |   Safari       |        Latest          |    Visual discrepencies see document ![Apple devices](/assets/testing/safariVisual.md)   | Site remains responsive on all pages and screen sizes   |
 ---
 
 <a id="FncTest"></a>
@@ -284,11 +290,11 @@ When putting each page through testing, tests showed that the images were origin
 
 - I placed random text into the index.html to test the 404 page loads
 
-  - ![404 Error](./assets/images/website-features/404-error-input.png)
+  - ![404 Error]()
 
 - I then submitted the URL and the 404 page successfully loaded
 
-  - ![404 success](./assets/images/website-features/404-error-success.png)
+  - ![404 success]()
 
 
 ---
