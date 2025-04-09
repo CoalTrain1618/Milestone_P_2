@@ -199,7 +199,8 @@ Testing was focused to ensure the following criteria were met:
 - 12 Alerts are related to the '< p > ? < /p >' not being headings. As it didn't seem necessary to update them, I left them as is. 
 
 #### 404 wave result
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+![404 Wave test](/assets/testing/404Wave.png)
 
 ---
 
@@ -226,7 +227,7 @@ Satisfied with the result of no errors, I then tested the HTML with the URL test
 ![URL test](/assets/testing/htmlUrlTest.png)
 
 
-Both tests yielded no errors.
+All tests yielded no errors.
 
 ---
 
