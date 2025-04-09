@@ -278,14 +278,6 @@ All tests yielded no errors.
 
 ### - Index HTML
 
-| Line of Code | Desired Destination | Target _blank | Test Case                | Description                                        | Status |
-|--------------|---------------------|---------------|--------------------------|----------------------------------------------------|--------|
-|   |   |     |  |  |    |
-|   |   |     |  |  |    | 
-|   |   |     |  |  |    |
-
-
-
 ### 404 error page 
 
 - I placed random text into the index.html to test the 404 page loads
@@ -346,7 +338,10 @@ The project will now have been cloned to your local machine for use.
 
 ### Image Credits
 
-- 
+- Gromit the dog gave consent for his image to be used
+
+![Gromit's signiture]()
+
 - 
 
 ### Honourable mentions 
@@ -363,3 +358,4 @@ The project will now have been cloned to your local machine for use.
 - Microsoft Photos for image resizing.
 - freeconvert.com [website]((https://www.freeconvert.com/webp-converter)) for converting images to webp format.
 - Microsoft paint for logo colouring
+- xplodivity on YouTube for the 3d card flip learning content: [YouTube Video](https://www.youtube.com/watch?v=IZIMGn1Usrw)
