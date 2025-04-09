@@ -266,7 +266,7 @@ All tests yielded no errors.
  |   Google       |        Latest          |    No visual discrepancies    | Site remains responsive on all pages and screen sizes   |
  |   Edge         |        Latest          |    No visual discrepancies    | Site remains responsive on all pages and screen sizes   |
  |   Brave        |        Latest          |    No visual discrepancies    | Site remains responsive on all pages and screen sizes   |
- |   Safari       |        Latest          |    Visual discrepencies see document ![Apple devices](/assets/testing/safariVisual.md)   | Site remains responsive on all pages and screen sizes   |
+ |   Safari       |        Latest          |    Visual discrepencies see document ([Safari Browser bugs](/assets/testing/safariVisual.md))   | Site remains responsive on all pages and screen sizes   |
 ---
 
 <a id="FncTest"></a>
