@@ -34,7 +34,7 @@
 
 - Page header that prominently showcases the game's title.
 
-- Reinforces the game's theme, making it easily recognizable to players.
+- Reinforces the game's theme, making it easily recognisable to players.
 
 #### Volume Control
  
@@ -42,7 +42,7 @@
 
 - A playful audio control interface that allows users to manage playback and volume through an interactive design.
 
-- Empowers users with full control over game audio, enhancing the experience with customizable sound adjustments.
+- Empowers users with full control over game audio, enhancing the experience with customisable sound adjustments.
 
 #### Game Instructions
 
@@ -64,7 +64,7 @@
 
 ![Card grid](/assets/appFeaturesImgs/cardGrid.png)
 
-- A structured arrangement of cards displayed in a grid layout, ensuring a clear and organized game interface.
+- A structured arrangement of cards displayed in a grid layout, ensuring a clear and organised game interface.
 
 - Provides players with an intuitive visual format for interacting with the game, making gameplay smoother and more engaging.
 
@@ -97,10 +97,10 @@
 ## Development process
 
 ### Overview
- To ensure a focused approach to building my application, I initially coded the base build in a separate repository. [Original Repository](https://github.com/CoalTrain1618/testBuild). This allowed me to concentrate solely on the development environment without the added pressure of an assessment-driven workflow. By structuring my process this way, I prioritized learning and experimentation over commit tracking, ensuring I could refine my skills and fully immerse myself in the development experience.
+ To ensure a focused approach to building my application, I initially coded the base build in a separate repository. [Original Repository](https://github.com/CoalTrain1618/testBuild). This allowed me to concentrate solely on the development environment without the added pressure of an assessment-driven workflow. By structuring my process this way, I prioritised learning and experimentation over commit tracking, ensuring I could refine my skills and fully immerse myself in the development experience.
 
 ### Rationality
-  I wanted to create a pure, build-focused environment—one where I could work independently without external influences or immediate feedback. To achieve this, I deliberately kept the project offline, allowing myself to think critically about development, debugging, and feature experimentation. Minimizing outside assistance was a key factor in this decision, as it challenged me to push my skills further and gain a deeper understanding of the coding process.
+  I wanted to create a pure, build-focused environment—one where I could work independently without external influences or immediate feedback. To achieve this, I deliberately kept the project offline, allowing myself to think critically about development, debugging, and feature experimentation. Minimising outside assistance was a key factor in this decision, as it challenged me to push my skills further and gain a deeper understanding of the coding process.
 
 ### Reflections
   Developing this project in the way I did was an incredibly rewarding experience. I truly believe I wouldn’t have achieved this depth of learning through any other method. Throughout the build, I pushed through numerous barriers in my programming skills, and as a result, my confidence has grown significantly compared to when I first started.
@@ -273,6 +273,41 @@ All tests yielded no errors.
 
 ## Functional Testing
 
+### Key features for testing
+
+#### Interactables
+- Play/Pause audio button
+  - Music Play Pause state corresponds to button
+  - Loads track when paused || played
+  - plays correct track when pausing and playing at different points
+
+- Volume Slider
+  - Correctly lowers || elevates volume 
+
+- Card Flips
+  - Card Matches
+  - Card Matches stay flipped
+  - Non matching Cards flip back
+  - Cards cannot be flipped when game ends
+  - Can only flip two Cards
+  - Timer starts on card flip
+  - Timer ends on all cards matched
+  - Correct music cues on game start
+  - Correct music cues when game ends
+  
+- Reset Button
+  - Resets game arrays and reinstates values
+  - Cues correct music on reset
+  - Shuffles cards
+
+- Modal pops up when game won
+  - Modal Close button
+  - Correct music cues when game beaten
+  - Modal displays valid player score
+
+### Manual Testing Document
+
+[Testing Document]()
 
 ## Results
 
