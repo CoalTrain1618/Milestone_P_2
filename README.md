@@ -277,33 +277,34 @@ All tests yielded no errors.
 
 #### Interactables
 - Play/Pause audio button
-  - Music Play Pause state corresponds to button
-  - Loads track when paused || played
-  - plays correct track when pausing and playing at different points
+  - Music Play Pause state corresponds to button - TC10[]
+  - Loads track when paused || played - TC12 & TC13[]
+  - plays correct track when pausing and playing at different points - TC11[]
 
 - Volume Slider
-  - Correctly lowers || elevates volume 
+  - Correctly lowers || elevates volume []
 
 - Card Flips
-  - Card Matches
-  - Card Matches stay flipped
-  - Non matching Cards flip back
-  - Cards cannot be flipped when game ends
-  - Can only flip two Cards
-  - Timer starts on card flip
-  - Timer ends on all cards matched
-  - Correct music cues on game start
-  - Correct music cues when game ends
+  - Card Matches - TC1 []
+  - Non matching Cards flip back - TC1 []
+  - Card Matches stay flipped - TC2 []
+  - Can only flip two Cards - TC3 []
+  - Cards cannot be flipped when game ends by matching all pairs - TC4 []
+  - Timer starts on card flip - TC5 []
+  - Timer ends on all cards matched - TC6 []
+  - Cards cannot be flipped when game ends by runnnig out of time - TC8 []
+  - Correct music cues on game start  []
+  - Correct music cues when game ends []
   
 - Reset Button
-  - Resets game arrays and reinstates values
-  - Cues correct music on reset
-  - Shuffles cards
+  - Resets game arrays and reinstates values - TC9 []
+  - Cues correct music on reset - TC9 []
+  - Shuffles cards - TC9 []
 
 - Modal pops up when game won
-  - Modal Close button
-  - Correct music cues when game beaten
-  - Modal displays valid player score
+  - Modal Close button []
+  - Correct music cues when game beaten []
+  - Modal displays valid player score []
 
 ### Manual Testing Document
 
