@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let pTime = document.getElementById("playerTime");
     // ──────────────────────────────────────────────────────────────────────────────────────────────
     //modal variables for function
+    let modalBackground = document.getElementById("modalBackdrop") 
     let modal = document.getElementById("endModal");
     let modalClose = document.querySelector(".modalClose");
     // ──────────────────────────────────────────────────────────────────────────────────────────────
