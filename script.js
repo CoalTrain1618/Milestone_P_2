@@ -154,7 +154,8 @@ document.addEventListener('DOMContentLoaded', () => {
             flippedCards = []; // clear array
             if (matchedPairs === 6) {  // winning conditionalstatement
                 clearInterval(timerCount); // stops setInterval timer from counting 
-                modal.style.display = "block"; // displays modal from hidden
+                modal.style.display = "block";  // displays modal from hidden
+                modalBackground.style.display = "block"; 
                 pTime.textContent = `You did it in: 00:${29 - timeLeft}s`; // player completion time display 
                 updateAudioTrack(2);
             }
@@ -172,6 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Event listener for closing the modal
     modalClose.addEventListener('click', () => {
         modal.style.display = "none"; // hides modal
+        modalBackground.style.display = "none";
         updateAudioTrack(0);
     });
 
