@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (matchedPairs === 6) {  // winning conditionalstatement
                 clearInterval(timerCount); // stops setInterval timer from counting 
                 modal.style.display = "block";  // displays modal from hidden
-                modalBackground.style.display = "block"; 
+                modalBackground.style.display = "flex"; 
                 pTime.textContent = `You did it in: 00:${29 - timeLeft}s`; // player completion time display 
                 updateAudioTrack(2);
             }
