@@ -158,8 +158,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 modalBackground.style.display = "flex"; 
                 pTime.textContent = `You did it in: 00:${29 - timeLeft}s`; // player completion time display 
                 updateAudioTrack(2);
-                modalClose.focus();
-                document.addEventListener("focusin", trapFocus,);
+                modalClose.focus(); // forces tab target to focus on close button
+                document.addEventListener("focusin", trapFocus,); // traps focus in modal
             }
         } else {
             setTimeout(() => { // if cards dont match
