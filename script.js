@@ -156,6 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 clearInterval(timerCount); // stops setInterval timer from counting 
                 modal.style.display = "block";  // displays modal from hidden
                 modalBackground.style.display = "flex"; 
+                trapFocus({target: modal})
                 pTime.textContent = `You did it in: 00:${29 - timeLeft}s`; // player completion time display 
                 updateAudioTrack(2);
             }
@@ -165,6 +166,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 card2.classList.remove('flip');
                 flippedCards = [];
             }, 1000); // 1000 milisecond delay
+        }
+    }
+    // ──────────────────────────────────────────────────────────────────────────────────────────────
+
+    function trapFocus(event) {
+        if (!modal.contains(event.target)) {
+            modalClose.focus();
         }
     }
 
