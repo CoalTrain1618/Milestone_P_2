@@ -3,7 +3,38 @@
 
 ## Match Thy Meme - MILESTONE_P_2 - Author: CoalTrain1618
 
-#### Functional testing document was originally in Excel, but ported into a MarkDown tabel using [table convert](https://tableconvert.com/). All testing was conducted in teh excel enviroment
+#### Functional testing document was originally in Excel, but ported into a MarkDown tabel using [table convert](https://tableconvert.com/). All testing was recorded in the excel file. 
+
+### Interactables and functionality 
+
+- Play/Pause audio button
+  - Music Play Pause state corresponds to button - [TC11](#TC11) []
+  - plays correct track when pausing and playing at different points - [TC12](#TC12) []
+  - Audio does not play when opting to have audio paused for entire game - [TC13](#TC13) & [TC14](#TC14) -[]
+
+- Volume Slider
+  - Correctly lowers || elevates volume - [TC15](#TC15) []
+
+- Card Flips
+  - Card Matches - [TC1](#TC1) []
+  - Non matching Cards flip back - [TC1](#TC1) []
+  - Card Matches stay flipped - [TC2](#TC2) []
+  - Can only flip two Cards - [TC3](#TC3) []
+  - Cards cannot be flipped when game ends by matching all pairs - [TC4](#TC4) []
+  - Timer starts on card flip - [TC5](#TC5) []
+  - Timer stop counting when all cards matched & time hits 00:00 - [TC6](#TC6) & [TC7](#TC7) []
+  - Cards cannot be flipped when game ends by runnnig out of time - [TC8](#TC8) []
+  
+- Reset Button
+  - Resets game arrays and reinstates values - [TC9](#TC9) []
+  - Cues correct music on reset - [TC9](#TC9) []
+  - Shuffles cards - [TC9](#TC9) []
+
+- Modal
+  - Modal pops up when game won - [TC16](#TC16) []
+  - Modal Close button - [TC18](#TC18) []
+  - Modal displays valid player score - [TC17](#TC17)[]
+ 
 
 
 

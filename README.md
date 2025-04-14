@@ -306,22 +306,19 @@ All tests yielded no errors.
 
 ### Manual Testing Document
 
-[Testing Document here](/assets/testing/functionalTesting.md)
+### [Testing Document here](/assets/testing/functionalTesting.md)
 
+---
 
-## Results
-
-### - Index HTML
-
-### 404 error page 
+### 404 error page test
 
 - I placed random text into the index.html to test the 404 page loads
 
-  - ![404 Error]()
+   ![404 Error](/assets/testing/randomText404.png)
 
 - I then submitted the URL and the 404 page successfully loaded
 
-  - ![404 success]()
+   ![404 success](/assets/testing/404Success.png)
 
 
 ---
@@ -377,16 +374,22 @@ The project will now have been cloned to your local machine for use.
 
 ![Gromit's signiture]()
 
-- 
+### Music
+#### All tracks obtained from royalty-free site [Pixabay.com](https://pixabay.com/)
+- bgMusic.mp3 - Producer: [Dream-Protocol](https://pixabay.com/users/dream-protocol-9556087/)
+- gameOn.mp3 - Producer: [lucadialessandro](https://pixabay.com/users/lucadialessandro-25927643/)
+- winning.mp3 - Producer: [moodmode](https://pixabay.com/users/moodmode-33139253/) 
+
 
 ### Honourable mentions 
 
 - Mentor: Gareth, who assisted with ideas and guidance throughout the project.
 - Tutor: Marko, who offered guidance throughout the project.
 - Fellow Students who offered feedback on the project.
-  - Seren hughes
-  - Teseo Nicholson
-  - anastsia 
+  - Seren 
+  - Teseo 
+  - Anastasiya
+  - Alex
 
 ### Tech
 
@@ -394,3 +397,4 @@ The project will now have been cloned to your local machine for use.
 - freeconvert.com [website]((https://www.freeconvert.com/webp-converter)) for converting images to webp format.
 - Microsoft paint for logo colouring
 - xplodivity on YouTube for the 3d card flip learning content: [YouTube Video](https://www.youtube.com/watch?v=IZIMGn1Usrw)
+- Excel to markDown table converter [tableconverter.com](https://tableconvert.com/)
