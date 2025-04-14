@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 pTime.textContent = `You did it in: 00:${29 - timeLeft}s`; // player completion time display 
                 updateAudioTrack(2);
                 modalClose.focus();
-                document.addEventListener("focusin", trapFocus);
+                document.addEventListener("focusin", trapFocus,);
             }
         } else {
             setTimeout(() => { // if cards dont match
