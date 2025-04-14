@@ -156,9 +156,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 clearInterval(timerCount); // stops setInterval timer from counting 
                 modal.style.display = "block";  // displays modal from hidden
                 modalBackground.style.display = "flex"; 
-                trapFocus({target: modal})
                 pTime.textContent = `You did it in: 00:${29 - timeLeft}s`; // player completion time display 
                 updateAudioTrack(2);
+                modalClose.focus();
+                document.addEventListener("focusin", trapFocus);
             }
         } else {
             setTimeout(() => { // if cards dont match
