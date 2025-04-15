@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let timerStarted = false; 
     // ──────────────────────────────────────────────────────────────────────────────────────────────
     //modal variables for function
-    let modalBackground = document.getElementById("modalBackdrop") 
+    let modalBackground = document.getElementById("modalBackdrop");
     let modal = document.getElementById("endModal");
     let modalClose = document.querySelector(".modalClose");
     // ──────────────────────────────────────────────────────────────────────────────────────────────
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 clearInterval(timerCount); // stops setInterval timer from counting 
                 showModal();
                 modalClose.focus(); // forces tab target to focus on close button
-                document.addEventListener("focusin", trapFocus,); // traps focus in modal
+                document.addEventListener("focusin", trapFocus); // traps focus in modal
             }
         } else {
             setTimeout(() => { // if cards dont match
