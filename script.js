@@ -167,9 +167,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Modal function
     function showModal() {
-        const modalContent = document.querySelector(".modal-content")
-        
-        
+        const modalContent = document.querySelector(".modal-content");
+        const pTime = document.getElementById("playerTime");
+        let completionTime = 29 - timeLeft;
+        console.log(completionTime);
+
         if (matchedPairs === 6) {
             modalContent.innerHTML = `
                 <h2>You Did It!</h2>
