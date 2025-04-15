@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             modalContent.innerHTML = `
                 <h2>Game Over!</h2>
-                <p>The time ran out before you could match enough pairs, what a disaster!</p>
+                <p>The time ran out before you could match enough pairs, disaster!</p>
                 <button class="modalClose btn-primary">Close</button>
             `;
         }
