@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let modalBackground = document.getElementById("modalBackdrop") 
     let modal = document.getElementById("endModal");
     let modalClose = document.querySelector(".modalClose");
-    let gameOverModal = document.getElementById("gOverModal")
     // ──────────────────────────────────────────────────────────────────────────────────────────────
     // Audio
     // Tracks array
@@ -105,8 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 clearInterval(timerCount); // stops countdown at zero
                 updateAudioTrack(0);
                 gameActive = false; // freezes gaem if time runs out
-                
-                return;
             }
 
             timeLeft--; // takes away 1
