@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (matchedPairs >= 2) {
             modalContent.innerHTML = `
                 <h2>Awww Shucks!</h2>
-                <p>You matched ${matchedPairs} pairs, you need some practise.</p>
+                <p>You matched ${matchedPairs} pairs, you need some practice.</p>
                 <button class="modalClose btn-primary">Close</button>
             `;
         } else {
@@ -199,8 +199,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const pTime = document.getElementById("playerTime");
         let completionTime = 29 - timeLeft;
-        console.log(completionTime);
-        pTime.textContent = `Time Completed in: ${completionTime}`;
+        if (pTime) {
+            pTime.textContent = `Time Completed in: ${completionTime}s`;
+        }
+    
 
         modal.style.display = "block";
         modalBackground.style.display = "flex";
