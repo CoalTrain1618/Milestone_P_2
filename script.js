@@ -148,6 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (meme1 === meme2) { // conditional equality check
             matchedPairs++; // if memes match +1 to matchedPairs
+            console.log(matchedPairs);
             flippedCards = []; // clear array
             if (matchedPairs === 6) {  // winning conditionalstatement
                 clearInterval(timerCount); // stops setInterval timer from counting 
