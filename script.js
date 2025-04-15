@@ -78,7 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
             audioPlayer.src = musicTracks[trackIndex];
             audioPlayer.load();
         }
-        console.log(audioPlayer.src);
     }
 
     // ──────────────────────────────────────────────────────────────────────────────────────────────
