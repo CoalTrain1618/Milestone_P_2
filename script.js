@@ -170,6 +170,43 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     // ──────────────────────────────────────────────────────────────────────────────────────────────
 
+    // Modal function
+    function showModal() {
+        const modalContent = document.querySelector(".modal-content")
+
+        if (matchedPairs === 6) {
+            modalContent.innerHTML = `
+                <h2>You Did It!</h2>
+                <p>You matched all pairs</p>
+                <p id="playerTime">Your Time: 00:00</p>
+                <button class="modalClose btn-primary">Close</button>
+            `;
+            updateAudioTrack(2);
+        } else if (matchedPairs >= 4) {
+            modalContent.innerHTML = `
+                <h2>Almost there!</h2>
+                <p>You matched ${matchedPairs} pairs, but the time ran out.</p>
+                <button class="modalClose btn-primary">Close</button>
+            `;
+        } else if (matchedPairs >= 2) {
+            modalContent.innerHTML = `
+                <h2>Awww Shucks!</h2>
+                <p>You matched ${matchedPairs} pairs, you need some practise.</p>
+                <button class="modalClose btn-primary">Close</button>
+            `;
+        } else {
+            modalContent.innerHTML = `
+                <h2>Game Over!</h2>
+                <p>The time ran out before you could match enough pairs, what a disaster!</p>
+                <button class="modalClose btn-primary">Close</button>
+            `;
+        }
+
+        modal.style.display = "block";
+        modalBackground.style.display = "flex";
+
+    }
+
     function trapFocus(event) {
         if (!modal.contains(event.target)) {
             modalClose.focus();
