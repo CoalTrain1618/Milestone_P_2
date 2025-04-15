@@ -153,10 +153,8 @@ document.addEventListener('DOMContentLoaded', () => {
             flippedCards = []; // clear array
             if (matchedPairs === 6) {  // winning conditionalstatement
                 clearInterval(timerCount); // stops setInterval timer from counting 
-                modal.style.display = "block";  // displays modal from hidden
-                modalBackground.style.display = "flex"; 
+                showModal();
                 pTime.textContent = `You did it in: 00:${29 - timeLeft}s`; // player completion time display 
-                updateAudioTrack(2);
                 modalClose.focus(); // forces tab target to focus on close button
                 document.addEventListener("focusin", trapFocus,); // traps focus in modal
             }
