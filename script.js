@@ -168,9 +168,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Modal function
     function showModal() {
         const modalContent = document.querySelector(".modal-content");
-        const pTime = document.getElementById("playerTime");
-        let completionTime = 29 - timeLeft;
-        console.log(completionTime);
 
         if (matchedPairs === 6) {
             modalContent.innerHTML = `
@@ -199,6 +196,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button class="modalClose btn-primary">Close</button>
             `;
         }
+
+        const pTime = document.getElementById("playerTime");
+        let completionTime = 29 - timeLeft;
+        console.log(completionTime);
+        pTime.textContent = `Time Completed in: ${completionTime}`;
 
         modal.style.display = "block";
         modalBackground.style.display = "flex";
