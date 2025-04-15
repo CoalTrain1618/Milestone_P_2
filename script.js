@@ -10,9 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const timer = document.getElementById("timer");
     let timerCount = null;
     let timerStarted = false; 
-
-    // Player Time
-    let pTime = document.getElementById("playerTime");
     // ──────────────────────────────────────────────────────────────────────────────────────────────
     //modal variables for function
     let modalBackground = document.getElementById("modalBackdrop") 
@@ -104,6 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 clearInterval(timerCount); // stops countdown at zero
                 updateAudioTrack(0);
                 gameActive = false; // freezes gaem if time runs out
+                showModal();
             }
 
             timeLeft--; // takes away 1
@@ -154,7 +152,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (matchedPairs === 6) {  // winning conditionalstatement
                 clearInterval(timerCount); // stops setInterval timer from counting 
                 showModal();
-                pTime.textContent = `You did it in: 00:${29 - timeLeft}s`; // player completion time display 
                 modalClose.focus(); // forces tab target to focus on close button
                 document.addEventListener("focusin", trapFocus,); // traps focus in modal
             }
@@ -171,12 +168,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Modal function
     function showModal() {
         const modalContent = document.querySelector(".modal-content")
-
+        
+        
         if (matchedPairs === 6) {
             modalContent.innerHTML = `
                 <h2>You Did It!</h2>
                 <p>You matched all pairs</p>
-                <p id="playerTime">Your Time: 00:00</p>
+                <p id="playerTime"></p>
                 <button class="modalClose btn-primary">Close</button>
             `;
             updateAudioTrack(2);
@@ -203,6 +201,11 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.style.display = "block";
         modalBackground.style.display = "flex";
 
+        document.querySelector(".modalClose").addEventListener("click", () => {
+            modal.style.display = "none";
+            modalBackground.style.display = "none";
+            updateAudioTrack(0);
+        });
     }
 
     function trapFocus(event) {
@@ -214,11 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ──────────────────────────────────────────────────────────────────────────────────────────────
 
     // Event listener for closing the modal
-    modalClose.addEventListener('click', () => {
-        modal.style.display = "none"; // hides modal
-        modalBackground.style.display = "none";
-        updateAudioTrack(0);
-    });
+    
 
     // ──────────────────────────────────────────────────────────────────────────────────────────────
 
