@@ -78,9 +78,12 @@
 
 - Provides a quick way to start fresh, ensuring a seamless experience when players want to retry or improve their attempt.
 
-#### Victory Modal
+#### Modal
 
-![Modal](./assets/appFeaturesImgs/modal.png)
+![Modal](./assets/appFeaturesImgs/modalLose.png)
+![Modal](./assets/appFeaturesImgs/modalTwothree.png)
+![Modal](./assets/appFeaturesImgs/modalFourFive.png)
+![Modal](./assets/appFeaturesImgs/modalWin.png)
 
 - A pop-up overlay that displays a completion message when the game ends, providing feedback to the player.
 
@@ -198,8 +201,6 @@ Testing was focused to ensure the following criteria were met:
 #### Index Wave Results
 ![index wave](./assets/testing/waveTest.png)
 
-- 12 Alerts are related to the '< p > ? < /p >' not being headings. As it didn't seem necessary to update them, I left them as is. 
-
 #### 404 wave result
 
 ![404 Wave test](./assets/testing/404Wave.png)
@@ -278,33 +279,35 @@ All tests yielded no errors.
 ### Test Case index
 
 #### Interactables
+
 - Play/Pause audio button
-  - Music Play Pause state corresponds to button - [TC11](#TC11) []
-  - plays correct track when pausing and playing at different points - [TC12](#TC12) []
-  - Audio does not play when opting to have audio paused for entire game - [TC13](#TC13) & [TC14](#TC14) -[]
+  - Music Play Pause state corresponds to button - TC11
+  - plays correct track when pausing and playing at different points - TC12
+  - Audio does not play when opting to have audio paused for entire game - TC13 & TC14
 
 - Volume Slider
-  - Correctly lowers || elevates volume - [TC15](#TC15) []
+  - Correctly lowers || elevates volume - TC15
 
 - Card Flips
-  - Card Matches - [TC1](#TC1) []
-  - Non matching Cards flip back - [TC1](#TC1) []
-  - Card Matches stay flipped - [TC2](#TC2) []
-  - Can only flip two Cards - [TC3](#TC3) []
-  - Cards cannot be flipped when game ends by matching all pairs - [TC4](#TC4) []
-  - Timer starts on card flip - [TC5](#TC5) []
-  - Timer stop counting when all cards matched & time hits 00:00 - [TC6](#TC6) & [TC7](#TC7) []
-  - Cards cannot be flipped when game ends by runnnig out of time - [TC8](#TC8) []
+  - Card Matches - TC1
+  - Non matching Cards flip back - TC1
+  - Card Matches stay flipped - TC2 
+  - Can only flip two Cards - TC3
+  - Cards cannot be flipped when game ends by matching all pairs - TC4
+  - Timer starts on card flip - TC5
+  - Timer stop counting when all cards matched & time hits 00:00 - TC6 & TC7
+  - Cards cannot be flipped when game ends by runnnig out of time - TC8
   
 - Reset Button
-  - Resets game arrays and reinstates values - [TC9](#TC9) []
-  - Cues correct music on reset - [TC9](#TC9) []
-  - Shuffles cards - [TC9](#TC9) []
+  - Resets game arrays and reinstates values - TC9
+  - Cues correct music on reset - TC9
+  - Shuffles cards - TC9
 
 - Modal
-  - Modal pops up when game won - [TC16](#TC16) []
-  - Modal Close button - [TC18](#TC18) []
-  - Modal displays valid player score - [TC17](#TC17)[]
+  - Modal pops up when game won - TC16
+  - Modal Close button - TC18
+  - Modal displays valid player score - TC17
+  - Modal displays correct content depending on matchedPair amount at game over - TC19, TC20, TC21 & TC22
 
 ### Manual Testing Document
 
