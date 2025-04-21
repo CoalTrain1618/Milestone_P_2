@@ -6,12 +6,12 @@ Throughout the development process, Safari || Apple devices in general have been
 
 ## Discrepancies
  - Thumb slider
-![Full Page](/assets/testing/safariBrowserTest.jpg)
+![Full Page](./safariBrowserTest.jpg)
  - Reset Button
 
-   ![reset Button](/assets/testing/resetButtonMalf.png)
+   ![reset Button](./resetButtonMalf.png)
  - background malfunction
-![White background](/assets/testing/whiteSpace.png)
+![White background](./whiteSpace.png)
 
 ### Points
 In the images above, the below points are represented

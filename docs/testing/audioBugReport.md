@@ -60,11 +60,12 @@ If the music is paused either during the DOM load or by user interaction, the au
 To counter this issue, I implemented an 'else' statement to ensure the track still loads. I wasn't sure if it would word, but had to try. 
 
               if (!isGamePlaying) {
-                              if (!audioPlayer.paused) {
-                                  playTrack(1); // Play music only if the audio is NOT paused
-                              } else {
-                                  audioPlayer.load(playTrack(1));
-                              }
+                    if (!audioPlayer.paused) {
+                        playTrack(1); // Play music only if the audio is NOT paused
+                    } else {
+                        audioPlayer.load(playTrack(1));
+                    }
+              }
 
 This worked perfectly for loading and keeping the music paused, but it also resulted in getting an error due to using an argument in the .load() so I further altered the code to this:
 
