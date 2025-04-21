@@ -1,9 +1,9 @@
-![Grom](./assets/appFeaturesImgs/gromReadMe.png)
+![Grom](./docs/appFeaturesImgs/gromReadMe.png)
 # Match Thy Meme
 
 
 
-![Multi device image](./assets/appFeaturesImgs/MultiMediaDisplay.png)
+![Multi device image](./docs/appFeaturesImgs/MultiMediaDisplay.png)
 ---
 
 ## Content
@@ -32,7 +32,7 @@
 ### Home Page
 
 #### Banner
-![Banner](./assets/appFeaturesImgs/Banner.png)
+![Banner](./docs/appFeaturesImgs/Banner.png)
 
 - Page header that prominently showcases the game's title.
 
@@ -40,7 +40,7 @@
 
 #### Volume Control
  
-![Volume Control](./assets/appFeaturesImgs/audioControls.png)
+![Volume Control](./docs/appFeaturesImgs/audioControls.png)
 
 - A playful audio control interface that allows users to manage playback and volume through an interactive design.
 
@@ -48,7 +48,7 @@
 
 #### Game Instructions
 
-![Game info](./assets/appFeaturesImgs/instructions.png)
+![Game info](./docs/appFeaturesImgs/instructions.png)
 
 - Displays clear guidance on how to play the game, ensuring players understand the mechanics.
 
@@ -56,7 +56,7 @@
 
 #### Countdown timer
 
-![Countdown](./assets/appFeaturesImgs/gameTimer.png)
+![Countdown](./docs/appFeaturesImgs/gameTimer.png)
 
 - A countdown time mechanic that visually displays the remaining seconds before the game ends.
 
@@ -64,7 +64,7 @@
 
 #### Card Grid
 
-![Card grid](./assets/appFeaturesImgs/cardGrid.png)
+![Card grid](./docs/appFeaturesImgs/cardGrid.png)
 
 - A structured arrangement of cards displayed in a grid layout, ensuring a clear and organised game interface.
 
@@ -72,7 +72,7 @@
 
 #### Rest Button
 
-![Reset Button](./assets/appFeaturesImgs/resetBtn.png)
+![Reset Button](./docs/appFeaturesImgs/resetBtn.png)
 
 - A dedicated button that allows users to restart the game, resetting all active elements, audio and progress.
 
@@ -80,10 +80,10 @@
 
 #### Modal
 
-![Modal](./assets/appFeaturesImgs/modalLose.png)
-![Modal](./assets/appFeaturesImgs/modalTwothree.png)
-![Modal](./assets/appFeaturesImgs/modalFourFive.png)
-![Modal](./assets/appFeaturesImgs/modalWin.png)
+![Modal](./docs/appFeaturesImgs/modalLose.png)
+![Modal](./docs/appFeaturesImgs/modalTwothree.png)
+![Modal](./docs/appFeaturesImgs/modalFourFive.png)
+![Modal](./docs/appFeaturesImgs/modalWin.png)
 
 - A pop-up overlay that displays a completion message when the game ends, providing feedback to the player.
 
@@ -91,7 +91,7 @@
 
 #### 404 Error page
 
-![404 error page](./assets/appFeaturesImgs/404Page.png)
+![404 error page](./docs/appFeaturesImgs/404Page.png)
 
 - Custom 404 page for: Error page not found
 
@@ -110,9 +110,7 @@
 ### Reflections
   Developing this project in the way I did was an incredibly rewarding experience. I truly believe I wouldn’t have achieved this depth of learning through any other method. Throughout the build, I pushed through numerous barriers in my programming skills, and as a result, my confidence has grown significantly compared to when I first started.
 
-  However, there were drawbacks that I would improve upon in future projects. Specifically, I aim to better document my debugging processes, experimentation phases, and the reasoning behind restructuring my code. Despite these challenges, I did manage to record the restructuring of my biggest bug involving the audio, which provided valuable insight into my development journey. ([Audio bug report](./assets/testing/audioBugReport.md))
-
-
+  However, there were drawbacks that I would improve upon in future projects. Specifically, I aim to better document my debugging processes, experimentation phases, and the reasoning behind restructuring my code. Despite these challenges, I did manage to record the restructuring of my biggest bug involving the audio, which provided valuable insight into my development journey. ([Audio bug report](./docs/testing/audioBugReport.docs
 
 <a id="usrStry"></a>
 
@@ -134,11 +132,11 @@
 ### link to Wireframes Here !
 
 PDF file containing all Wireframes designs
-[Wireframes PDF](./assets/wireframes/MatchThyMeme-Wireframes.pdf)
+[Wireframes PDF](./docs/wireframes/MatchThyMeme-Wireframes.pdf)
 
 ---
 
-<a id="techno"></a>
+<a id="technodocs
 
 ### Technologies Used Here
 ----
@@ -199,11 +197,11 @@ Testing was focused to ensure the following criteria were met:
 
 ## Wave Test Results
 #### Index Wave Results
-![index wave](./assets/testing/waveTest.png)
+![index wave](./docs/testing/waveTest.png)
 
 #### 404 wave result
 
-![404 Wave test](./assets/testing/404Wave.png)
+![404 Wave test](./docs/testing/404Wave.png)
 
 ---
 
@@ -215,19 +213,19 @@ I used the W3C code validator to check that all HTML code is valid. I pasted eac
 
 ## Results
 #### index.html
-![index.html](./assets/testing/404Validation.png)
+![index.html](./docs/testing/404Validation.png)
 
 #### 404.html
-![404.html](./assets/testing/404Validation.png)
+![404.html](./docs/testing/404Validation.png)
 
 #### CSS
-![](./assets/testing/cssValidation.png)
+![](./docs/testing/cssValidation.png)
 
 Satisfied with the result of no errors, I then tested the HTML with the URL testing method.
 
 #### URL test HTML
 
-![URL test](./assets/testing/htmlUrlTest.png)
+![URL test](./docs/testing/htmlUrlTest.png)
 
 
 All tests yielded no errors.
@@ -244,13 +242,13 @@ All tests yielded no errors.
 
 ## index.html - Desktop
 
-![Desktop result](./assets/testing/indexLighthouseRlt.png)
+![Desktop result](./docs/testing/indexLighthouseRlt.png)
 
  - Very satisfied with a perfect 100 across the board. A previous test attempt resulted in an SEO score of 90, revealing a missing meta description in the HTML display. After addressing this issue, the latest test achieved full marks.
 
 ## index.html - Mobile
 
-![Mobile Result](./assets/testing/indexLighthouseMobile.png)
+![Mobile Result](./docs/testing/indexLighthouseMobile.png)
 
   - I anticipated lower results for mobile testing, but I'm pleasantly surprised and very happy with the outcome.
 ---
@@ -269,7 +267,7 @@ All tests yielded no errors.
  |   Google       |        Latest          |    No visual discrepancies    | Site remains responsive on all pages and screen sizes   |
  |   Edge         |        Latest          |    No visual discrepancies    | Site remains responsive on all pages and screen sizes   |
  |   Brave        |        Latest          |    No visual discrepancies    | Site remains responsive on all pages and screen sizes   |
- |   Safari       |        Latest          |    Visual discrepencies see document ([Safari Browser bugs](./assets/testing/safariVisual.md))   | Site remains responsive on all pages and screen sizes   |
+ |   Safari       |        Latest          |    Visual discrepencies see document ([Safari Browser bugs](./docs/testing/safariVisual.md))   | Site remains responsive on all pages and screen sizes   |
 ---
 
 <a id="FncTest"></a>
@@ -311,7 +309,7 @@ All tests yielded no errors.
 
 ### Manual Testing Document
 
-### [Testing Document here](./assets/testing/functionalTesting.md)
+### [Testing Document here](./docs/testing/functionalTesting.md)
 
 ---
 
@@ -319,11 +317,11 @@ All tests yielded no errors.
 
 - I placed random text into the index.html to test the 404 page loads
 
-   ![404 Error](./assets/testing/randomText404.png)
+   ![404 Error](./docs/testing/randomText404.png)
 
 - I then submitted the URL and the 404 page successfully loaded
 
-   ![404 success](./assets/testing/404Success.png)
+   ![404 success](./docs/testing/404Success.png)
 
 
 ---
