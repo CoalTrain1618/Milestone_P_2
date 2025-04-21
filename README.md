@@ -372,10 +372,13 @@ The project will now have been cloned to your local machine for use.
 ## Credits
 
 ### Image Credits
-
+#### Gromit - Chief Paw-thority Inspector
 - Gromit the dog gave consent for his image to be used
 
-![Gromit's signiture]()
+![Gromit's signiture](./docs/testing/gromitSigniture.png)
+
+#### Meme images
+ - All meme images were taken from [knowyourmeme.com](https://knowyourmeme.com) templates
 
 ### Music
 #### All tracks obtained from royalty-free site [Pixabay.com](https://pixabay.com/)
@@ -401,3 +404,5 @@ The project will now have been cloned to your local machine for use.
 - Microsoft paint for logo colouring
 - xplodivity on YouTube for the 3d card flip learning content: [YouTube Video](https://www.youtube.com/watch?v=IZIMGn1Usrw)
 - Excel to markDown table converter [tableconverter.com](https://tableconvert.com/)
+
+
