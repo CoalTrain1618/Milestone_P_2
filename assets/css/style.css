@@ -194,7 +194,6 @@ header img {
     z-index: 1000;
     left: 10%;
     width: 80%;
-    height: 30%;
     background: linear-gradient(to bottom, #dd83d6, #2190da);
     border: 5px solid #c8cd33;
 }
