@@ -110,7 +110,7 @@
 ### Reflections
   Developing this project in the way I did was an incredibly rewarding experience. I truly believe I wouldn’t have achieved this depth of learning through any other method. Throughout the build, I pushed through numerous barriers in my programming skills, and as a result, my confidence has grown significantly compared to when I first started.
 
-  However, there were drawbacks that I would improve upon in future projects. Specifically, I aim to better document my debugging processes, experimentation phases, and the reasoning behind restructuring my code. Despite these challenges, I did manage to record the restructuring of my biggest bug involving the audio, which provided valuable insight into my development journey. ([Audio bug report](./docs/testing/audioBugReport.docs
+  However, there were drawbacks that I would improve upon in future projects. Specifically, I aim to better document my debugging processes, experimentation phases, and the reasoning behind restructuring my code. Despite these challenges, I did manage to record the restructuring of my biggest bug involving the audio, which provided valuable insight into my development journey. ([Audio bug report](./docs/testing/audioBugReport.md))
 
 <a id="usrStry"></a>
 
